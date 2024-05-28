@@ -1,0 +1,10 @@
+repositories:
+  etsi_its_messages:
+    type: git
+    url: https://github.com/ika-rwth-aachen/etsi_its_messages.git
+    version: main
+  vanetza_msgs:
+    type: git
+    url: https://github.com/cubesys-GmbH/ros_vanetza_msgs.git
+    version: master
+ 
