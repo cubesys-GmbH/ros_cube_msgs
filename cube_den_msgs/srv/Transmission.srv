@@ -1,0 +1,20 @@
+uint8 request
+etsi_its_denm_msgs/DENM message
+vanetza_msgs/GeoNetArea destination_area
+vanetza_msgs/TrafficClass traffic_class
+builtin_interfaces/Duration repetition_interval
+builtin_interfaces/Duration repetition_duration
+
+uint8 REQUEST_TRIGGER = 0
+uint8 REQUEST_UPDATE = 1
+uint8 REQUEST_TERMINATION = 2
+
+---
+uint8 confirm
+etsi_its_denm_msgs/ActionID action_id
+
+uint8 CONFIRM_ACCEPTED = 0
+uint8 CONFIRM_INVALID_REQUEST = 1
+uint8 CONFIRM_INVALID_ACTION_ID = 2
+uint8 CONFIRM_ENCODING_FAILURE = 3
+uint8 CONFIRM_BTP_FAILURE = 4
