@@ -19,9 +19,11 @@ jobs:
           with:
             rosdistro: $ROS_DISTRO
             target-packages: $TARGET_PACKAGES
+            build-depends-repos: build-depends.repos
 
         - name: Test
           uses: autowarefoundation/autoware-github-actions/colcon-test@v1
           with:
             rosdistro: $ROS_DISTRO
             target-packages: $TARGET_PACKAGES
+            build-depends-repos: build-depends.repos
