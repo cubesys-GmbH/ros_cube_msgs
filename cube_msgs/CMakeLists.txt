@@ -13,6 +13,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AccelerationControlStatus.msg"
   "msg/Curvature.msg"
+  "msg/DriveDirection.msg"
   "msg/Pseudonym.msg"
   DEPENDENCIES std_msgs)
 
