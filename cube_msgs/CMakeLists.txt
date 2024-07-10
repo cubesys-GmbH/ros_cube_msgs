@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AccelerationControlStatus.msg"
   "msg/Curvature.msg"
   "msg/DriveDirection.msg"
+  "msg/ExteriorLights.msg"
   "msg/Pseudonym.msg"
   DEPENDENCIES std_msgs)
 
