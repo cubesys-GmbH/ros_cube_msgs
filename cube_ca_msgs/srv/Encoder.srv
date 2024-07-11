@@ -1,0 +1,4 @@
+etsi_its_cam_msgs/CAM input
+---
+bool success
+uint8[] output
