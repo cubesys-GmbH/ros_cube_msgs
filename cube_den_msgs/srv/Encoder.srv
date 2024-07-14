@@ -1,0 +1,4 @@
+etsi_its_denm_msgs/DENM input
+---
+bool success
+uint8[] output
