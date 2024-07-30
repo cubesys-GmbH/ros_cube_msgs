@@ -10,6 +10,7 @@ find_package(vanetza_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   srv/Encoder.srv
+  srv/Lookup.srv
   srv/Transmission.srv
   DEPENDENCIES std_msgs etsi_its_denm_msgs vanetza_msgs)
 
