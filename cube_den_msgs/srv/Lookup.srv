@@ -1,0 +1,5 @@
+etsi_its_denm_msgs/ActionID action_id
+---
+bool found
+bool is_own
+etsi_its_denm_msgs/DENM message
