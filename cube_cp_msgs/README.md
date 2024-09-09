@@ -1,1 +1,1 @@
-CUBE interface messages related to ETSI ITS Cooperative Awareness.
+CUBE interface messages related to ETSI ITS Cooperative Perception.
