@@ -16,6 +16,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DriveDirection.msg"
   "msg/ExteriorLights.msg"
   "msg/Pseudonym.msg"
+  "srv/ChangePseudonym.srv"
   DEPENDENCIES std_msgs)
 
 if(BUILD_TESTING)
