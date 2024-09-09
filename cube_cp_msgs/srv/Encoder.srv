@@ -1,0 +1,4 @@
+etsi_its_cpm_ts_msgs/CollectivePerceptionMessage input
+---
+bool success
+uint8[] output
