@@ -1,3 +1,6 @@
+# select any pseudonym matching filter mask
+uint8[8] mask [0, 0, 0, 0, 0, 0, 0, 0]
+uint8[8] filter [0, 0, 0, 0, 0, 0, 0, 0]
 ---
 bool success
 uint8[8] digest
