@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ExteriorLights.msg"
   "msg/Pseudonym.msg"
   "srv/ChangePseudonym.srv"
+  "srv/GetItsTimestamp.srv"
   DEPENDENCIES std_msgs)
 
 if(BUILD_TESTING)
