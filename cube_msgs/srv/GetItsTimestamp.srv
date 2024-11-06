@@ -1,0 +1,5 @@
+---
+# current ITS timestamp counting TAI milliseconds since 2004-01-01 00:00:00 UTC
+uint64 its_timestamp
+# True if the clock is synchronized with the ITS time
+bool clock_synced
