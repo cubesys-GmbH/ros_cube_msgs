@@ -1,0 +1,30 @@
+when:
+  - event: push
+    branch: main
+  - event: pull_request
+  - event: manual
+
+matrix:
+  ROS_DISTRO:
+  - humble
+  - jazzy
+
+steps:
+  - name: colcon-test
+    image: ros:${ROS_DISTRO}
+    commands:
+    - . /opt/ros/${ROS_DISTRO}/setup.sh
+    - cube_pkgs=$(git ls-files '**/package.xml' | xargs xmllint --xpath '/package/name/text()' | tr '\n' ' ')
+    - 'echo "CUBE ROS packages found here are: $cube_pkgs"'
+    # update repositories
+    - apt-get -y update
+    - rosdep update
+    # import dependency repositories
+    - mkdir -p dependency_ws
+    - vcs import dependency_ws < build-depends.repos
+    # install dependencies
+    - build_pkgs=$(colcon list -p --packages-above-and-dependencies $cube_pkgs)
+    - rosdep install -y --from-paths $build_pkgs --ignore-src
+    # colcon build and test
+    - colcon build --packages-up-to $cube_pkgs --event-handlers console_cohesion+
+    - colcon test --packages-select $cube_pkgs --return-code-on-test-failure
