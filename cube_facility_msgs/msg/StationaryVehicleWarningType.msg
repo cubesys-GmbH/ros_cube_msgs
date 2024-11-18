@@ -1,0 +1,5 @@
+uint8 STOPPED_VEHICLE = 0
+uint8 BROKEN_DOWN_VEHICLE = 1
+uint8 POST_CRASH = 2
+
+uint8 value
