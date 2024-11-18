@@ -1,11 +1,14 @@
 cube_facility_msgs/StationaryVehicleWarningType stationary_vehicle_type
 cube_facility_msgs/RoadType road_type
 cube_facility_msgs/LanePosition lane_position 
-cube_facility_msgs/InformationQuality information_quality    
-bool ignition_terminal_15                                       # set to True for ignition on; False for ignition off
-bool termination                                                # set to True for termination, otherwise False
+cube_facility_msgs/InformationQuality information_quality
+
+# set to True for ignition on; False for ignition off
+bool ignition
+
+# set to True for termination, otherwise False
+bool termination
 
 ---
-
 bool success
 string message
