@@ -7,7 +7,6 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(etsi_its_denm_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
@@ -17,7 +16,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/LanePosition.msg
   msg/StationaryVehicleWarningType.msg
   srv/StationaryVehicleRequest.srv
-  DEPENDENCIES std_msgs etsi_its_denm_msgs)
+  DEPENDENCIES std_msgs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
