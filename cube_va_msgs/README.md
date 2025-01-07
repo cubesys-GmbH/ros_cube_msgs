@@ -1,0 +1,1 @@
+CUBE interface messages related to ETSI ITS Vulnerable Road Users (VRU) awareness.
