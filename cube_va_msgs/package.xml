@@ -3,7 +3,7 @@
 <package format="3">
   <name>cube_va_msgs</name>
   <version>0.1.0</version>
-  <description>CUBE interface messages for Vulnerable Awareness (VA)</description>
+  <description>CUBE interface messages for Vulnerable Road Users Awareness (VA)</description>
   <maintainer email="apostolos.georgiadis@nfiniity.com">Apostolos Georgiadis</maintainer>
   <license>MIT</license>
 
