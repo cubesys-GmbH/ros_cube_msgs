@@ -8,6 +8,7 @@ find_package(etsi_its_cam_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  msg/EgoView.msg
   srv/Encoder.srv
   DEPENDENCIES std_msgs etsi_its_cam_msgs)
 
