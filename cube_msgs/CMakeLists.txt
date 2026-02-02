@@ -15,6 +15,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Curvature.msg"
   "msg/DriveDirection.msg"
   "msg/ExteriorLights.msg"
+  "msg/PathHistory.msg"
+  "msg/PathPoint.msg"
   "msg/Pseudonym.msg"
   "srv/ChangePseudonym.srv"
   "srv/GetItsTimestamp.srv"
