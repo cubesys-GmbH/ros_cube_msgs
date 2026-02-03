@@ -1,0 +1,5 @@
+float32 time_threshold
+float32 distance_threshold
+---
+---
+CollisionRisk risk
